@@ -1,0 +1,28 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % fetcher fetch --help
+                                                                                                    
+ Usage: fetcher fetch [OPTIONS] {urls_file}                                                         
+                                                                                                    
+ Fetch every URL in URLS_FILE and write one JSON line per page to OUT.                              
+                                                                                                    
+╭─ Arguments ──────────────────────────────────────────────────────────────────────────────────────╮
+│ *    urls_file      <file>  One URL per line [required]                                          │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────╮
+│ --out          -o                 <path>                  [default: pages.jsonl]                 │
+│ --concurrency                     <int range> [x>=1]      [env var: FETCHER_CONCURRENCY]         │
+│                                                           [default: 10]                          │
+│ --rps                             <float range> [x>=0]    Per host, 0 = no limit [default: 10.0] │
+│ --timeout                         <float range> [x>=0.1]  Seconds per request [default: 10.0]    │
+│ --retries                         <int range> [x>=0]      Retries after the first try            │
+│                                                           [default: 3]                           │
+│ --workers                         <int range> [x>=0]      Processes for HTML cleaning            │
+│                                                           [default: 4]                           │
+│ --robots           --no-robots                            Respect robots.txt [default: robots]   │
+│ --user-agent                      <str>                   [env var: FETCHER_USER_AGENT]          │
+│                                                           [default: sreemanti-bot/0.1            │
+│                                                           (+https://github.com/alexriderspy/con… │
+│ --log-level                       <str>                   [env var: FETCHER_LOG_LEVEL]           │
+│                                                           [default: info]                        │
+│ --help                                                    Show this message and exit.            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+

@@ -1,0 +1,11 @@
+# A small mixed list for chapter 10: good pages, a 404, an image, a page robots.txt forbids
+https://docs.python.org/3/library/asyncio.html
+https://docs.python.org/3/library/json.html
+https://docs.python.org/3/library/pathlib.html
+https://docs.python.org/3/library/logging.html
+https://docs.python.org/3/library/dataclasses.html
+https://docs.python.org/3/library/json.html
+https://docs.python.org/3/library/not-a-real-module.html
+https://docs.python.org/3/_static/py.svg
+https://en.wikipedia.org/wiki/Web_crawler
+https://en.wikipedia.org/wiki/Special:Random

@@ -1,0 +1,7 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % fetcher fetch data/demo_urls.txt -o data/demo.jsonl
+{"ts": "2026-10-21T01:25:50.392+00:00", "level": "info", "event": "start", "urls": 9, "concurrency": 10, "rps": 10.0}
+{"ts": "2026-10-21T01:25:50.748+00:00", "level": "info", "event": "blocked by robots.txt", "url": "https://en.wikipedia.org/wiki/Special:Random"}
+{"ts": "2026-10-21T01:25:50.966+00:00", "level": "warning", "event": "http error", "url": "https://docs.python.org/3/library/not-a-real-module.html", "status": 404}
+fetching ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9/9 0:00:00
+{"ts": "2026-10-21T01:25:51.113+00:00", "level": "info", "event": "done", "seconds": 0.7, "pages_per_s": 12.5, "ok": 6, "blocked_by_robots": 1, "http_error": 1, "not_html": 1}
+wrote 9 pages to data/demo.jsonl

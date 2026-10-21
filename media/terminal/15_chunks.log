@@ -1,0 +1,8 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/to_chunks.py data/pages.jsonl
+266 pages -> 3,133 chunks of up to 300 words -> data/chunks.jsonl
+{
+  "id": "https://docs.python.org/3/library/intro.html#0",
+  "url": "https://docs.python.org/3/library/intro.html",
+  "title": "Introduction — Python 3.15.0 documentation",
+  "text": "Introduction The Python standard library consists of a collection of modules. There are many ways to dissect this collection. Most modules are written in Python, but some are written in C. All can be imported into your program to add functionality. Some modules provide interfaces that are highly spe..."
+}

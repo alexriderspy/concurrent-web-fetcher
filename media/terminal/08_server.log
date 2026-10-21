@@ -1,0 +1,8 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/flaky_server.py 49745
+flaky server on http://127.0.0.1:49745
+06:55:46.462  GET /robots.txt -> 200
+06:55:46.467  GET /page/1 -> 200
+06:55:46.967  GET /page/2 -> 200
+06:55:47.467  GET /page/3 -> 200
+06:55:47.966  GET /page/4 -> 200
+06:55:48.466  GET /page/5 -> 200

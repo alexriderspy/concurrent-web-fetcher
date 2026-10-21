@@ -1,0 +1,14 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % fetcher --help
+                                                                                                    
+ Usage: fetcher [OPTIONS] COMMAND [ARGS]...                                                         
+                                                                                                    
+ Fetch many pages at once, politely, as clean JSONL.                                                
+                                                                                                    
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────╮
+│ --help          Show this message and exit.                                                      │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ───────────────────────────────────────────────────────────────────────────────────────╮
+│ fetch  Fetch every URL in URLS_FILE and write one JSON line per page to OUT.                     │
+│ stats  Summarise a JSONL file: statuses, attempts, words, and the slowest pages.                 │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+

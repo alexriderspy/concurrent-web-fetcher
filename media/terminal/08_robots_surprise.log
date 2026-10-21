@@ -1,0 +1,5 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/demo_fetch.py --user-agent concurrent-web-fetcher/0.1 https://en.wikipedia.org/wiki/Async/await https://en.wikipedia.org/wiki/Web_crawler
+{"ts": "2026-10-21T01:25:44.458+00:00", "level": "info", "event": "blocked by robots.txt", "url": "https://en.wikipedia.org/wiki/Async/await"}
+{"ts": "2026-10-21T01:25:44.460+00:00", "level": "info", "event": "blocked by robots.txt", "url": "https://en.wikipedia.org/wiki/Web_crawler"}
+blocked_by_robots  tries=0      0 ms       0 words  https://en.wikipedia.org/wiki/Async/await
+blocked_by_robots  tries=0      0 ms       0 words  https://en.wikipedia.org/wiki/Web_crawler

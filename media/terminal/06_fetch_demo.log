@@ -1,0 +1,7 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/demo_fetch.py --rps 0 https://docs.python.org/3/library/os.html https://docs.python.org/3/library/json.html https://docs.python.org/3/library/asyncio-task.html https://docs.python.org/3/library/re.html https://docs.python.org/3/library/math.html https://docs.python.org/3/library/typing.html
+ok                 tries=1    260 ms    3707 words  https://docs.python.org/3/library/json.html
+ok                 tries=1    267 ms    3641 words  https://docs.python.org/3/library/math.html
+ok                 tries=1    338 ms   10075 words  https://docs.python.org/3/library/re.html
+ok                 tries=1    391 ms    6274 words  https://docs.python.org/3/library/asyncio-task.html
+ok                 tries=1    553 ms   27617 words  https://docs.python.org/3/library/os.html
+ok                 tries=1    557 ms   17703 words  https://docs.python.org/3/library/typing.html

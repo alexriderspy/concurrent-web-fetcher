@@ -1,0 +1,20 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % ruff check .
+E501 Line too long (102 > 100)
+  --> scripts/bench.py:28:101
+   |
+26 |     print(f"{len(urls)} URLs from {path}\n")
+27 |     print(
+28 |         f"{'concurrency':>11} {'rps limit':>9} {'seconds':>8} {'pages/s':>8} {'ok':>4} {'speedup':>8}"
+   |                                                                                                     ^^
+29 |     )
+30 |     baseline = None
+   |
+
+E501 Line too long (108 > 100)
+  --> scripts/flaky_server.py:16:101
+   |
+15 | hits: Counter[str] = Counter()
+16 | PAGE = "<html><head><title>{0}</title></head><body><main><h1>{0}</h1><p>It worked.</p></main></body></html>"
+   |                                                                                                     ^^^^^^^^
+
+Found 2 errors.

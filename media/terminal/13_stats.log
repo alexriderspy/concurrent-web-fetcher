@@ -1,0 +1,10 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % fetcher stats data/pages.jsonl
+       data/pages.jsonl (266 pages)        
+┏━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━┓
+┃ status ┃ pages ┃ avg attempts ┃   words ┃
+┡━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━┩
+│ ok     │   266 │         1.00 │ 760,914 │
+└────────┴───────┴──────────────┴─────────┘
+slowest:    881 ms  https://docs.python.org/3/library/doctest.html
+slowest:    779 ms  https://docs.python.org/3/library/tkinter.scrolledtext.html
+slowest:    727 ms  https://docs.python.org/3/library/quopri.html

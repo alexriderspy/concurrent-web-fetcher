@@ -1,0 +1,24 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/demo_models.py
+{
+  "url": "https://docs.python.org/3/library/asyncio.html",
+  "status": "ok",
+  "attempts": 1,
+  "elapsed_ms": 212,
+  "fetched_at": "2026-10-21T09:30:00Z",
+  "http_status": 200,
+  "final_url": null,
+  "title": "asyncio — Asynchronous I/O",
+  "text": "asyncio is a library to write concurrent code using the async/await syntax.",
+  "word_count": 12,
+  "error": null
+}
+3 validation errors for Page
+status
+  Input should be 'ok', 'http_error', 'network_error', 'blocked_by_robots' or 'not_html' [type=enum, input_value='okay', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/enum
+attempts
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='two', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing
+fetched_at
+  Input should be a valid datetime or date, input is too short [type=datetime_from_date_parsing, input_value='today', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/datetime_from_date_parsing

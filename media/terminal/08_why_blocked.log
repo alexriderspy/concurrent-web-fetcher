@@ -1,0 +1,4 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/why_blocked.py https://en.wikipedia.org/wiki/Async/await concurrent-web-fetcher/0.1
+agent: concurrent-web-fetcher/0.1
+allowed: False
+robots.txt has a group for 'fetch', and 'fetch' is inside 'concurrent-web-fetcher'

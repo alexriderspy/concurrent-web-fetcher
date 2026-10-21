@@ -1,0 +1,4 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/download_size.py
+266 pages: 3.8 MB on the wire, 25.0 MB of HTML
+download only: 0.8 s -> 4.47 MB/s
+cleaning all of it on one core: 9.5 s

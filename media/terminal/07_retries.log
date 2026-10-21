@@ -1,0 +1,16 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/demo_fetch.py --timeout 2 http://127.0.0.1:49680/flaky/1 http://127.0.0.1:49680/flaky/2 http://127.0.0.1:49680/limited http://127.0.0.1:49680/missing http://127.0.0.1:49680/slow
+{"ts": "2026-10-21T01:25:33.009+00:00", "level": "warning", "event": "retrying", "url": "http://127.0.0.1:49680/flaky/1", "attempt": 1, "reason": "HTTP 503", "sleep_s": 0.04}
+{"ts": "2026-10-21T01:25:33.110+00:00", "level": "warning", "event": "retrying", "url": "http://127.0.0.1:49680/flaky/2", "attempt": 1, "reason": "HTTP 503", "sleep_s": 0.13}
+{"ts": "2026-10-21T01:25:33.210+00:00", "level": "warning", "event": "retrying", "url": "http://127.0.0.1:49680/limited", "attempt": 1, "reason": "HTTP 429", "sleep_s": 1.0}
+{"ts": "2026-10-21T01:25:33.310+00:00", "level": "warning", "event": "http error", "url": "http://127.0.0.1:49680/missing", "status": 404}
+http_error         tries=1      2 ms       0 words  http://127.0.0.1:49680/missing
+{"ts": "2026-10-21T01:25:33.511+00:00", "level": "warning", "event": "retrying", "url": "http://127.0.0.1:49680/flaky/1", "attempt": 2, "reason": "HTTP 503", "sleep_s": 0.32}
+{"ts": "2026-10-21T01:25:33.610+00:00", "level": "warning", "event": "retrying", "url": "http://127.0.0.1:49680/flaky/2", "attempt": 2, "reason": "HTTP 503", "sleep_s": 0.5}
+ok                 tries=3    964 ms       2 words  http://127.0.0.1:49680/flaky/1
+ok                 tries=3   1008 ms       2 words  http://127.0.0.1:49680/flaky/2
+ok                 tries=2   1008 ms       2 words  http://127.0.0.1:49680/limited
+{"ts": "2026-10-21T01:25:35.410+00:00", "level": "warning", "event": "retrying", "url": "http://127.0.0.1:49680/slow", "attempt": 1, "reason": "ReadTimeout", "sleep_s": 0.43}
+{"ts": "2026-10-21T01:25:37.848+00:00", "level": "warning", "event": "retrying", "url": "http://127.0.0.1:49680/slow", "attempt": 2, "reason": "ReadTimeout", "sleep_s": 0.03}
+{"ts": "2026-10-21T01:25:39.889+00:00", "level": "warning", "event": "retrying", "url": "http://127.0.0.1:49680/slow", "attempt": 3, "reason": "ReadTimeout", "sleep_s": 0.81}
+{"ts": "2026-10-21T01:25:42.709+00:00", "level": "warning", "event": "gave up", "url": "http://127.0.0.1:49680/slow", "error": "ReadTimeout"}
+network_error      tries=4   9301 ms       0 words  http://127.0.0.1:49680/slow

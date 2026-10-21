@@ -1,0 +1,38 @@
+[project]
+name = "concurrent-web-fetcher"
+version = "0.1.0"
+description = "Fetch many pages at once, retry failures, respect robots.txt and save clean JSONL."
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28",
+    "typer>=0.15",
+    "rich>=13",
+    "beautifulsoup4>=4.13",
+    "pydantic>=2.9",
+]
+
+[project.scripts]
+fetcher = "fetcher.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fetcher"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "ASYNC"]
+
+[tool.mypy]
+strict = true
+python_version = "3.12"
+files = ["src", "tests", "scripts"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

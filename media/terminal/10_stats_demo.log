@@ -1,0 +1,13 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % fetcher stats data/demo.jsonl
+              data/demo.jsonl (9 pages)              
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━┓
+┃ status            ┃ pages ┃ avg attempts ┃  words ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━┩
+│ ok                │     6 │         1.00 │ 31,762 │
+│ blocked_by_robots │     1 │         0.00 │      0 │
+│ http_error        │     1 │         1.00 │      0 │
+│ not_html          │     1 │         1.00 │      0 │
+└───────────────────┴───────┴──────────────┴────────┘
+slowest:    261 ms  https://en.wikipedia.org/wiki/Web_crawler
+slowest:    197 ms  https://docs.python.org/3/library/pathlib.html
+slowest:    175 ms  https://docs.python.org/3/library/asyncio.html

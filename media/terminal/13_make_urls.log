@@ -1,0 +1,2 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/make_urls.py
+279 links on the index page -> 266 unique pages -> data/urls.txt

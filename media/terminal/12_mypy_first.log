@@ -1,0 +1,7 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % mypy
+src/fetcher/robots.py:31: error: "RobotFileParser" has no attribute "disallow_all"  [attr-defined]
+src/fetcher/robots.py:34: error: "RobotFileParser" has no attribute "disallow_all"  [attr-defined]
+src/fetcher/robots.py:36: error: "RobotFileParser" has no attribute "allow_all"  [attr-defined]
+src/fetcher/retry.py:29: error: Returning Any from function declared to return "float"  [no-any-return]
+src/fetcher/fetch.py:117: error: Item "None" of "str | None" has no attribute "split"  [union-attr]
+Found 5 errors in 3 files (checked 19 source files)

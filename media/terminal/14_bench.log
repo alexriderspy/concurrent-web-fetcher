@@ -1,0 +1,11 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % python scripts/bench.py
+266 URLs from data/urls.txt
+
+concurrency rps limit   cleaning  seconds   ok speedup
+          1      none   1 thread     13.9  266    1.0x
+         10      none   1 thread     11.4  266    1.2x
+         25      none   1 thread     10.8  266    1.3x
+         10      none    4 procs      3.6  266    3.8x
+         25      none    4 procs      3.7  266    3.8x
+         25      none    8 procs      3.8  266    3.7x
+         10        10    4 procs     26.7  266    0.5x
