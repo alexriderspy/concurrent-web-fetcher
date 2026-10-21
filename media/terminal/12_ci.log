@@ -1,0 +1,25 @@
+sreemanti@MacBook-Pro concurrent-web-fetcher % gh run view 39527776749 -R alexriderspy/concurrent-web-fetcher --verbose
+
+✓ main ci · 39527776749
+Triggered via push less than a minute ago
+
+JOBS
+✓ check in 15s (ID 118986359667)
+  ✓ Set up job
+  ✓ Run actions/checkout@v5
+  ✓ Run actions/setup-python@v6
+  ✓ Install
+  ✓ Lint
+  ✓ Type check
+  ✓ Tests
+  ✓ Post Run actions/setup-python@v6
+  ✓ Post Run actions/checkout@v5
+  ✓ Complete job
+
+ANNOTATIONS
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+check: .github#1
+
+
+For more information about the job, try: gh run view --job=118986359667
+View this run on GitHub: https://github.com/alexriderspy/concurrent-web-fetcher/actions/runs/39527776749
